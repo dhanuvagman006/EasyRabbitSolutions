@@ -8,9 +8,49 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "EasyRabbitSolutions | Premium Software Development",
+  metadataBase: new URL('https://easyrabbitsolutions.com'),
+  title: {
+    default: "EasyRabbitSolutions | Web Design & Custom Software Solutions",
+    template: "%s | EasyRabbitSolutions"
+  },
   description:
-    "EasyRabbitSolutions builds premium software, web, and mobile products with high-performance engineering and minimalist design.",
+    "Looking for a premium website or custom software? EasyRabbitSolutions provides top-tier web design, mobile app development, and high-performance software solutions to elevate your business.",
+  keywords: [
+    "website design", 
+    "software solutions", 
+    "web development", 
+    "mobile app development", 
+    "custom software", 
+    "UI/UX design", 
+    "tech agency", 
+    "build a website"
+  ],
+  authors: [{ name: "EasyRabbitSolutions" }],
+  creator: "EasyRabbitSolutions",
+  openGraph: {
+    title: "EasyRabbitSolutions | Web Design & Custom Software Solutions",
+    description: "Premium web design, mobile app development, and high-performance software solutions to elevate your digital presence.",
+    url: "https://easyrabbitsolutions.com",
+    siteName: "EasyRabbitSolutions",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "EasyRabbitSolutions | Web Design & Software Solutions",
+    description: "Premium web design, mobile app development, and high-performance software solutions.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 export default function RootLayout({ children }) {
